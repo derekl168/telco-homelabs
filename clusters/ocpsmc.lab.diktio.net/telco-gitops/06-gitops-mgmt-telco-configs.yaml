@@ -8,8 +8,8 @@ spec:
   generators:
     - git:
         directories:
-          - path: clusters/ocpsmc.lab.diktio.net/config-*
-        repoURL: 'https://github.com/nsatsia/telco-homelabs.git'
+          - path: clusters/aitest01.telcolab.sg/config-*
+        repoURL: 'https://github.com/derekl168/telco-homelabs.git'
         revision: HEAD
   template:
     metadata:
@@ -21,7 +21,7 @@ spec:
         server: 'https://kubernetes.default.svc'
       project: default
       source:
-        repoURL: 'https://github.com/nsatsia/telco-homelabs.git'
+        repoURL: 'https://github.com/derekl168/telco-homelabs.git'
         targetRevision: HEAD
         path: '{{path}}'
       syncPolicy:

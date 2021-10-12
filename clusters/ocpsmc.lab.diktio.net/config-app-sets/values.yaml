@@ -1,2 +1,2 @@
-base_git_url: https://github.com/nsatsia/telco-homelabs.git
+base_git_url: https://github.com/derekl168/telco-homelabs.git
 hook_image: registry.redhat.io/openshift4/ose-cli:latest

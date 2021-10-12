@@ -19,7 +19,7 @@ spec:
       containers:
         - image: registry.redhat.io/openshift-gitops-1/argocd-rhel8:v1.2.0
           imagePullPolicy: IfNotPresent
-          #lab-registry.ocpsmc.lab.diktio.net/nsatsia/telco-toolbox:latest
+          #lab-registry.aitest01.telcolab.sg/samsung/telco-toolbox:latest
           #imagePullPolicy: Always
           name: mcp-wait-job
           env:
@@ -46,7 +46,7 @@ spec:
               done
               oc get secret -n {{ .Values.global.namespace }} cluster-{{ .Values.global.name }}-admin-kubeconfig -o jsonpath={.data.kubeconfig} | base64 -d > /tmp/kubeconfig
               ARGOPW=$(oc get secret -n telco-gitops telco-gitops-cluster -o go-template='{{ "{{" }}index .data "admin.password"{{ "}}" }}' | base64 -d)
-              argocd --username=admin --password=$ARGOPW --insecure --config /tmp/config login telco-gitops-server-telco-gitops.apps.ocpsmc.lab.diktio.net
+              argocd --username=admin --password=$ARGOPW --insecure --config /tmp/config login telco-gitops-server-telco-gitops.apps.aitest01.telcolab.sg
               if `argocd cluster list --config /tmp/config | egrep -q api.{{ .Values.name }}.{{ .Values.domain }}`; then
                 argocd cluster rm https://api.{{ .Values.name }}.{{ .Values.domain }}:6443
               fi

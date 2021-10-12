@@ -16,7 +16,7 @@ spec:
       serviceAccountName: cli-job-sa
       terminationGracePeriodSeconds: 30
       containers:
-        - image: lab-registry.ocpsmc.lab.diktio.net/nsatsia/telco-toolbox:latest
+        - image: lab-registry.aitest01.telcolab.sg/samsung/telco-toolbox:latest
           imagePullPolicy: Always
           # imagePullPolicy: IfNotPresent
           name: mcp-wait-job
@@ -48,7 +48,7 @@ spec:
               done
               oc get secret -n assisted-installer cluster-$CLUSTER_NAME-lab-admin-kubeconfig -o jsonpath={.data.kubeconfig} | base64 -d > /tmp/kubeconfig
               ARGOPW=$(oc get secret -n telco-gitops telco-gitops-cluster -o go-template='{{index .data "admin.password"}}' | base64 -d)
-              argocd --username=admin --password=$ARGOPW --insecure --config /tmp/config login telco-gitops-server-telco-gitops.apps.ocpsmc.lab.diktio.net
+              argocd --username=admin --password=$ARGOPW --insecure --config /tmp/config login telco-gitops-server-telco-gitops.apps.aitest01.telcolab.sg
               argocd cluster add --config /tmp/config --kubeconfig /tmp/kubeconfig admin --name telco-ocptest
               argocd logout --config /tmp/config admin
               rm -f /tmp/kubeconfig /tmp/config 

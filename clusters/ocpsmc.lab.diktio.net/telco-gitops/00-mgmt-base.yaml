@@ -11,9 +11,9 @@ spec:
     namespace: 'telco-gitops'
     server: 'https://kubernetes.default.svc'
   source:
-    repoURL: 'https://github.com/nsatsia/telco-homelabs.git'
+    repoURL: 'https://github.com/derekl168/telco-homelabs.git'
     targetRevision: HEAD
-    path: clusters/ocpsmc.lab.diktio.net
+    path: clusters/aitest01.telcolab.sg
     #Commenting recurse=false as it is the defult and causes an out of sync as it is omitted in the manifest
     # https://github.com/argoproj/argo-cd/issues/4501
     #directory:

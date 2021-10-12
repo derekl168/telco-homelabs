@@ -19,7 +19,7 @@ export TELCO_MGMT_PATH="~/path/to/this/path"
 oc apply -k $TELCO_MGMT_PATH
 
 export KUBECONFIG="~/ocpsmc"
-export TELCO_MGMT_PATH="~/Documents/vscode/telco-homelabs/clusters/ocpsmc.lab.diktio.net/"
+export TELCO_MGMT_PATH="~/Documents/vscode/telco-homelabs/clusters/aitest01.telcolab.sg/"
 oc apply -k $TELCO_MGMT_PATH
 
 ```
@@ -98,7 +98,7 @@ curl -L -o argocd https://github.com/argoproj/argo-cd/releases/download/v2.0.5/a
 
     ```bash
     # User admin, password from above
-    argocd login telco-gitops-server-telco-gitops.apps.ocpsmc.lab.diktio.net
+    argocd login telco-gitops-server-telco-gitops.apps.aitest01.telcolab.sg
     ---argocd login https://api.mgmt.telco.shift.zone:6443 --name admin---
     ```
 
