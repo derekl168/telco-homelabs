@@ -43,7 +43,7 @@ aicli create cluster ocptest \
 ### Customise cluster
 ```bash
 aicli update cluster ocptest \
-  -P base_dns_domain=lab.diktio.net \
+  -P base_dns_domain=telcolab.sg \
   -P vip_dhcp_allocation=false \
   -P cluster_network_cidr=10.128.0.0/14 \
   -P cluster_network_host_prefix=23 \

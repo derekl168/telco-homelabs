@@ -1,4 +1,4 @@
 base_git_url: https://github.com/derekl168/telco-homelabs.git
 namespace: assisted-installer
 name: ocptest
-domain: lab.diktio.net
+domain: telcolab.sg
