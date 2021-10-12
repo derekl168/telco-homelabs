@@ -12,6 +12,6 @@ spec:
           - key: kubernetes.io/hostname
             operator: In
             values:
-              - master1.ocpsmc.lab.diktio.net
-              - master2.ocpsmc.lab.diktio.net
-              - master3.ocpsmc.lab.diktio.net
+              - master1.aitest01.telcolab.sg
+              - master2.aitest01.telcolab.sg
+              - master3.aitest01.telcolab.sg

@@ -4,7 +4,7 @@ metadata:
   name: registry-ca-idm
   namespace: openshift-config
 data:
-  lab-registry.ocpsmc.lab.diktio.net: |
+  lab-registry.aitest01.telcolab.sg: |
     -----BEGIN CERTIFICATE-----
     MIIDlDCCAnygAwIBAgIBATANBgkqhkiG9w0BAQsFADA5MRcwFQYDVQQKDA5MQUIu
     RElLVElPLk5FVDEeMBwGA1UEAwwVQ2VydGlmaWNhdGUgQXV0aG9yaXR5MB4XDTE5

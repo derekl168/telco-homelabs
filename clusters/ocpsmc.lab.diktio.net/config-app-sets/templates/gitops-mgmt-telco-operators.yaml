@@ -8,7 +8,7 @@ spec:
   generators:
     - git:
         directories:
-          - path: clusters/ocpsmc.lab.diktio.net/operator-*
+          - path: clusters/aitest01.telcolab.sg/operator-*
         repoURL: '{{ .Values.base_git_url }}'
         revision: HEAD
   template:
