@@ -5,7 +5,7 @@ metadata:
   name: cluster-ocptest-lab
   namespace: assisted-installer
 spec:
-  baseDomain: lab.diktio.net
+  baseDomain: telcolab.sg
   clusterName: ocptest
   controlPlaneConfig:
     servingCertificates: {}

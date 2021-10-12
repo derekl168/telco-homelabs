@@ -2,7 +2,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
- name: mgmt-telco-diktio-net
+ name: mgmt-telco-telcolab-sg
  namespace: telco-gitops
 spec:
   generators:
